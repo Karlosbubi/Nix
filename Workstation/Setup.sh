@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This contains one time SetUp
 
