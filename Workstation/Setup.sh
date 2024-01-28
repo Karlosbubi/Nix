@@ -1,6 +1,6 @@
 #!/bin/sh
 # This contains one time SetUp
-source .env
+source $(dirname -- "${BASH_SOURCE[0]}")/.env
 
 # Primary SSH Key
 cp $SSH_PRIVATE_KEY $HOME/.ssh/id_rsa

@@ -1,5 +1,5 @@
 #!/bin/sh
-source ./.env
+source $(dirname -- "${BASH_SOURCE[0]}")/.env
 # This refreshes in use config
 
 # Desktops
