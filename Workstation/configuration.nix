@@ -8,7 +8,16 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+
+
+      # Include my Shards
+      # Desktop
+      ./Desktop/Gnome1.nix
     ];
+
+
+  # Enable Flakes and the new command-line tool
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];  
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -43,17 +52,17 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  #services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
-    layout = "de";
-    xkbVariant = "";
-  };
+  #services.xserver = {
+  #  layout = "de";
+  #  xkbVariant = "";
+  #};
 
   # Configure console keymap
   console.keyMap = "de";
@@ -156,7 +165,7 @@
   
 
 environment.interactiveShellInit = ''
-  alias nixConf='gnome-text-editor $HOME/Projects/Nix/Workstation/configuration.nix'
+  alias nixConf='$EDITOR $HOME/Projects/Nix/Workstation/configuration.nix'
   alias RBS='$HOME/Projects/Nix/Workstation/Apply.sh'
   alias vim='nvim'
 '';
