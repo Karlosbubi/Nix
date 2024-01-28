@@ -156,8 +156,8 @@
   
 
 environment.interactiveShellInit = ''
-  alias nixConf='sudo gnome-text-editor /etc/nixos/configuration.nix'
-  alias RBS='sudo nixos-rebuild switch'
+  alias nixConf='gnome-text-editor $HOME/Projects/Nix/Workstation/configuration.nix'
+  alias RBS='$HOME/Projects/Nix/Workstation/Apply.sh'
   alias vim='nvim'
 '';
 
