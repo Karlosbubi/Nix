@@ -1,5 +1,5 @@
 #!/bin/sh
-
+source .env
 # This refreshes in use config
 
 # NixConf
