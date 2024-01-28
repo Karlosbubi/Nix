@@ -36,7 +36,7 @@
 
   hardware = {
     opengl.enable = true;
-    nvdia.modesetting.enable = true;
+    nvidia.modesetting.enable = true;
   };
 
   # Set your time zone.
