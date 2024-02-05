@@ -146,6 +146,13 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  #Insecure Packages - TODO Revise
+  #nixpkgs.config.permittedInsecurePackages = [
+  #  "electron-25.9.0" # Used by Obsidian 1.5.3
+  #];
+
+
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
