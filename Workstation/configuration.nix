@@ -111,7 +111,7 @@
       teamspeak_client
       
     # Development
-      vscodium
+      vscode
 			jetbrains.rider
       jetbrains.clion
 			github-desktop
@@ -121,7 +121,7 @@
 			#ghex
 			
 		# Producitvity
-			logseq
+			obsidian
 			zotero
 			texliveFull
 			pandoc
