@@ -11,5 +11,3 @@ sudo chmod 600 $HOME/.ssh/id_rsa.pub
 eval $(ssh-agent -s)
 ssh-add $HOME/.ssh/id_rsa
 
-# Inital etablishment of in-use config
-./Apply.sh
