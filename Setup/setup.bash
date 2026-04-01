@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Setup Variables
+bash ./scripts/env.bash
+
 # Install Stuff
 bash ./scripts/install.bash
 
