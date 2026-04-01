@@ -1,2 +1,2 @@
 # Nix
-My Nix Configuration and dotfiles
+My (currently not so Nix) Configuration and dotfiles
