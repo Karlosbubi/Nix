@@ -1,0 +1,4 @@
+**/*.asc
+**/id_rsa*
+**/ssh/config
+**/ssh/known_hosts
